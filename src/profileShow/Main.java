@@ -10,9 +10,11 @@ public class Main {
 		System.out.println(person1.age);
 		System.out.println(person1.height);
 		
-		person1.setWeight(60);
+		System.out.println();
+		person1.weight(60);
 		person1.print();
 		
+		System.out.println();
 		person1.count();
 
 	}

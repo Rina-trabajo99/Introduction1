@@ -16,26 +16,20 @@ public class Person {
 		this.callCount ++; //コンストラクタが呼び出された回数をカウントさせる
 	}
 	
-	public void setWeight(double weight) {
+	public void weight(double weight) {
 		this.weight = weight;
-		calBmi();
+		bmi();
 	}
 	
-	public void calBmi() {
-		this.bmi = Math.floor(this.weight / (this.height * this.height));
-	}
-	
-	public double getBmi() {
-		return this.bmi;
+	public double bmi() {
+		return this.bmi = Math.floor(this.weight / (this.height * this.height));
 	}
 	public void print() {
-		System.out.println();
 		System.out.println("名前は" + this.name + "です");
 		System.out.println("年は" + this.age + "才です");
 		System.out.println("BMIは" + this.bmi + "です");
 	}
 	public void count() {
-		System.out.println();
 		System.out.println("合計" + this.callCount + "人です");
 	}
 
