@@ -13,7 +13,7 @@ public class Person {
 		this.name = name;
 		this.age = age;
 		this.height = height;
-		this.callCount ++;
+		this.callCount ++; //コンストラクタが呼び出された回数をカウントさせる
 	}
 	
 	public void setWeight(double weight) {
