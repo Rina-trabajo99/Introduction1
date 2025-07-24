@@ -15,8 +15,8 @@ public class Main {
 		person1.print();
 		
 		System.out.println();
-		person1.count();
-
+		person1.printCount();
+		
 	}
 
 }
