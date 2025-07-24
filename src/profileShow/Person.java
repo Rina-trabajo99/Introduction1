@@ -22,19 +22,20 @@ public class Person {
 	}
 	
 	public void calBmi() {
-		this.bmi = this.weight / (this.height * this.height);
-		this.bmi = Math.floor(bmi);
+		this.bmi = Math.floor(this.weight / (this.height * this.height));
 	}
 	
 	public double getBmi() {
 		return this.bmi;
 	}
 	public void print() {
+		System.out.println();
 		System.out.println("名前は" + this.name + "です");
 		System.out.println("年は" + this.age + "才です");
 		System.out.println("BMIは" + this.bmi + "です");
 	}
 	public void count() {
+		System.out.println();
 		System.out.println("合計" + this.callCount + "人です");
 	}
 
